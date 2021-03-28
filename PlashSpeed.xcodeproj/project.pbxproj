@@ -1,0 +1,754 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		816FDADD2610C4DF00250DC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816FDADC2610C4DF00250DC5 /* AppDelegate.swift */; };
+		816FDADF2610C4DF00250DC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816FDADE2610C4DF00250DC5 /* SceneDelegate.swift */; };
+		816FDAE12610C4DF00250DC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816FDAE02610C4DF00250DC5 /* ViewController.swift */; };
+		816FDAE42610C4DF00250DC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816FDAE22610C4DF00250DC5 /* Main.storyboard */; };
+		816FDAE62610C4E000250DC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 816FDAE52610C4E000250DC5 /* Assets.xcassets */; };
+		816FDAE92610C4E000250DC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 816FDAE72610C4E000250DC5 /* LaunchScreen.storyboard */; };
+		816FDAF42610C4E100250DC5 /* PlashSpeedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816FDAF32610C4E100250DC5 /* PlashSpeedTests.swift */; };
+		816FDAFF2610C4E100250DC5 /* PlashSpeedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816FDAFE2610C4E100250DC5 /* PlashSpeedUITests.swift */; };
+		816FDB162610CD2D00250DC5 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816FDB152610CD2D00250DC5 /* NetworkExtension.framework */; };
+		816FDB192610CD2D00250DC5 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 816FDB182610CD2D00250DC5 /* PacketTunnelProvider.swift */; };
+		816FDB1E2610CD2D00250DC5 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 816FDB132610CD2D00250DC5 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		816FDAF02610C4E100250DC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 816FDAD12610C4DF00250DC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 816FDAD82610C4DF00250DC5;
+			remoteInfo = PlashSpeed;
+		};
+		816FDAFB2610C4E100250DC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 816FDAD12610C4DF00250DC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 816FDAD82610C4DF00250DC5;
+			remoteInfo = PlashSpeed;
+		};
+		816FDB1C2610CD2D00250DC5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 816FDAD12610C4DF00250DC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 816FDB122610CD2D00250DC5;
+			remoteInfo = PacketTunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		816FDB222610CD2D00250DC5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				816FDB1E2610CD2D00250DC5 /* PacketTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		816FDAD92610C4DF00250DC5 /* PlashSpeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlashSpeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		816FDADC2610C4DF00250DC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		816FDADE2610C4DF00250DC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		816FDAE02610C4DF00250DC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		816FDAE32610C4DF00250DC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		816FDAE52610C4E000250DC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		816FDAE82610C4E000250DC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		816FDAEA2610C4E000250DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		816FDAEF2610C4E100250DC5 /* PlashSpeedTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlashSpeedTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		816FDAF32610C4E100250DC5 /* PlashSpeedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlashSpeedTests.swift; sourceTree = "<group>"; };
+		816FDAF52610C4E100250DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		816FDAFA2610C4E100250DC5 /* PlashSpeedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlashSpeedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		816FDAFE2610C4E100250DC5 /* PlashSpeedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlashSpeedUITests.swift; sourceTree = "<group>"; };
+		816FDB002610C4E100250DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		816FDB132610CD2D00250DC5 /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		816FDB152610CD2D00250DC5 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		816FDB182610CD2D00250DC5 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		816FDB1A2610CD2D00250DC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		816FDB1B2610CD2D00250DC5 /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
+		816FDB272610D29000250DC5 /* PlashSpeed.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PlashSpeed.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		816FDAD62610C4DF00250DC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816FDAEC2610C4E100250DC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816FDAF72610C4E100250DC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816FDB102610CD2D00250DC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816FDB162610CD2D00250DC5 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		816FDAD02610C4DF00250DC5 = {
+			isa = PBXGroup;
+			children = (
+				816FDADB2610C4DF00250DC5 /* PlashSpeed */,
+				816FDAF22610C4E100250DC5 /* PlashSpeedTests */,
+				816FDAFD2610C4E100250DC5 /* PlashSpeedUITests */,
+				816FDB172610CD2D00250DC5 /* PacketTunnel */,
+				816FDB142610CD2D00250DC5 /* Frameworks */,
+				816FDADA2610C4DF00250DC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		816FDADA2610C4DF00250DC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				816FDAD92610C4DF00250DC5 /* PlashSpeed.app */,
+				816FDAEF2610C4E100250DC5 /* PlashSpeedTests.xctest */,
+				816FDAFA2610C4E100250DC5 /* PlashSpeedUITests.xctest */,
+				816FDB132610CD2D00250DC5 /* PacketTunnel.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		816FDADB2610C4DF00250DC5 /* PlashSpeed */ = {
+			isa = PBXGroup;
+			children = (
+				816FDB272610D29000250DC5 /* PlashSpeed.entitlements */,
+				816FDADC2610C4DF00250DC5 /* AppDelegate.swift */,
+				816FDADE2610C4DF00250DC5 /* SceneDelegate.swift */,
+				816FDAE02610C4DF00250DC5 /* ViewController.swift */,
+				816FDAE22610C4DF00250DC5 /* Main.storyboard */,
+				816FDAE52610C4E000250DC5 /* Assets.xcassets */,
+				816FDAE72610C4E000250DC5 /* LaunchScreen.storyboard */,
+				816FDAEA2610C4E000250DC5 /* Info.plist */,
+			);
+			path = PlashSpeed;
+			sourceTree = "<group>";
+		};
+		816FDAF22610C4E100250DC5 /* PlashSpeedTests */ = {
+			isa = PBXGroup;
+			children = (
+				816FDAF32610C4E100250DC5 /* PlashSpeedTests.swift */,
+				816FDAF52610C4E100250DC5 /* Info.plist */,
+			);
+			path = PlashSpeedTests;
+			sourceTree = "<group>";
+		};
+		816FDAFD2610C4E100250DC5 /* PlashSpeedUITests */ = {
+			isa = PBXGroup;
+			children = (
+				816FDAFE2610C4E100250DC5 /* PlashSpeedUITests.swift */,
+				816FDB002610C4E100250DC5 /* Info.plist */,
+			);
+			path = PlashSpeedUITests;
+			sourceTree = "<group>";
+		};
+		816FDB142610CD2D00250DC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				816FDB152610CD2D00250DC5 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		816FDB172610CD2D00250DC5 /* PacketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				816FDB182610CD2D00250DC5 /* PacketTunnelProvider.swift */,
+				816FDB1A2610CD2D00250DC5 /* Info.plist */,
+				816FDB1B2610CD2D00250DC5 /* PacketTunnel.entitlements */,
+			);
+			path = PacketTunnel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		816FDAD82610C4DF00250DC5 /* PlashSpeed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 816FDB032610C4E100250DC5 /* Build configuration list for PBXNativeTarget "PlashSpeed" */;
+			buildPhases = (
+				816FDAD52610C4DF00250DC5 /* Sources */,
+				816FDAD62610C4DF00250DC5 /* Frameworks */,
+				816FDAD72610C4DF00250DC5 /* Resources */,
+				816FDB222610CD2D00250DC5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				816FDB1D2610CD2D00250DC5 /* PBXTargetDependency */,
+			);
+			name = PlashSpeed;
+			productName = PlashSpeed;
+			productReference = 816FDAD92610C4DF00250DC5 /* PlashSpeed.app */;
+			productType = "com.apple.product-type.application";
+		};
+		816FDAEE2610C4E100250DC5 /* PlashSpeedTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 816FDB062610C4E100250DC5 /* Build configuration list for PBXNativeTarget "PlashSpeedTests" */;
+			buildPhases = (
+				816FDAEB2610C4E100250DC5 /* Sources */,
+				816FDAEC2610C4E100250DC5 /* Frameworks */,
+				816FDAED2610C4E100250DC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				816FDAF12610C4E100250DC5 /* PBXTargetDependency */,
+			);
+			name = PlashSpeedTests;
+			productName = PlashSpeedTests;
+			productReference = 816FDAEF2610C4E100250DC5 /* PlashSpeedTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		816FDAF92610C4E100250DC5 /* PlashSpeedUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 816FDB092610C4E100250DC5 /* Build configuration list for PBXNativeTarget "PlashSpeedUITests" */;
+			buildPhases = (
+				816FDAF62610C4E100250DC5 /* Sources */,
+				816FDAF72610C4E100250DC5 /* Frameworks */,
+				816FDAF82610C4E100250DC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				816FDAFC2610C4E100250DC5 /* PBXTargetDependency */,
+			);
+			name = PlashSpeedUITests;
+			productName = PlashSpeedUITests;
+			productReference = 816FDAFA2610C4E100250DC5 /* PlashSpeedUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		816FDB122610CD2D00250DC5 /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 816FDB1F2610CD2D00250DC5 /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				816FDB0F2610CD2D00250DC5 /* Sources */,
+				816FDB102610CD2D00250DC5 /* Frameworks */,
+				816FDB112610CD2D00250DC5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacketTunnel;
+			productName = PacketTunnel;
+			productReference = 816FDB132610CD2D00250DC5 /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		816FDAD12610C4DF00250DC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					816FDAD82610C4DF00250DC5 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					816FDAEE2610C4E100250DC5 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 816FDAD82610C4DF00250DC5;
+					};
+					816FDAF92610C4E100250DC5 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 816FDAD82610C4DF00250DC5;
+					};
+					816FDB122610CD2D00250DC5 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 816FDAD42610C4DF00250DC5 /* Build configuration list for PBXProject "PlashSpeed" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 816FDAD02610C4DF00250DC5;
+			productRefGroup = 816FDADA2610C4DF00250DC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				816FDAD82610C4DF00250DC5 /* PlashSpeed */,
+				816FDAEE2610C4E100250DC5 /* PlashSpeedTests */,
+				816FDAF92610C4E100250DC5 /* PlashSpeedUITests */,
+				816FDB122610CD2D00250DC5 /* PacketTunnel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		816FDAD72610C4DF00250DC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816FDAE92610C4E000250DC5 /* LaunchScreen.storyboard in Resources */,
+				816FDAE62610C4E000250DC5 /* Assets.xcassets in Resources */,
+				816FDAE42610C4DF00250DC5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816FDAED2610C4E100250DC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816FDAF82610C4E100250DC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816FDB112610CD2D00250DC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		816FDAD52610C4DF00250DC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816FDAE12610C4DF00250DC5 /* ViewController.swift in Sources */,
+				816FDADD2610C4DF00250DC5 /* AppDelegate.swift in Sources */,
+				816FDADF2610C4DF00250DC5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816FDAEB2610C4E100250DC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816FDAF42610C4E100250DC5 /* PlashSpeedTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816FDAF62610C4E100250DC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816FDAFF2610C4E100250DC5 /* PlashSpeedUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		816FDB0F2610CD2D00250DC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				816FDB192610CD2D00250DC5 /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		816FDAF12610C4E100250DC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 816FDAD82610C4DF00250DC5 /* PlashSpeed */;
+			targetProxy = 816FDAF02610C4E100250DC5 /* PBXContainerItemProxy */;
+		};
+		816FDAFC2610C4E100250DC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 816FDAD82610C4DF00250DC5 /* PlashSpeed */;
+			targetProxy = 816FDAFB2610C4E100250DC5 /* PBXContainerItemProxy */;
+		};
+		816FDB1D2610CD2D00250DC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 816FDB122610CD2D00250DC5 /* PacketTunnel */;
+			targetProxy = 816FDB1C2610CD2D00250DC5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		816FDAE22610C4DF00250DC5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				816FDAE32610C4DF00250DC5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		816FDAE72610C4E000250DC5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				816FDAE82610C4E000250DC5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		816FDB012610C4E100250DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		816FDB022610C4E100250DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		816FDB042610C4E100250DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PlashSpeed/PlashSpeed.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMU58WLMLD;
+				INFOPLIST_FILE = PlashSpeed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.codingtime.ios.PlashSpeed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		816FDB052610C4E100250DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PlashSpeed/PlashSpeed.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMU58WLMLD;
+				INFOPLIST_FILE = PlashSpeed/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.codingtime.ios.PlashSpeed;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		816FDB072610C4E100250DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMU58WLMLD;
+				INFOPLIST_FILE = PlashSpeedTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.codingtime.ios.PlashSpeedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlashSpeed.app/PlashSpeed";
+			};
+			name = Debug;
+		};
+		816FDB082610C4E100250DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMU58WLMLD;
+				INFOPLIST_FILE = PlashSpeedTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.codingtime.ios.PlashSpeedTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PlashSpeed.app/PlashSpeed";
+			};
+			name = Release;
+		};
+		816FDB0A2610C4E100250DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMU58WLMLD;
+				INFOPLIST_FILE = PlashSpeedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.codingtime.ios.PlashSpeedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlashSpeed;
+			};
+			name = Debug;
+		};
+		816FDB0B2610C4E100250DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMU58WLMLD;
+				INFOPLIST_FILE = PlashSpeedUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.codingtime.ios.PlashSpeedUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PlashSpeed;
+			};
+			name = Release;
+		};
+		816FDB202610CD2D00250DC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMU58WLMLD;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.codingtime.ios.PlashSpeed.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		816FDB212610CD2D00250DC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMU58WLMLD;
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.codingtime.ios.PlashSpeed.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		816FDAD42610C4DF00250DC5 /* Build configuration list for PBXProject "PlashSpeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				816FDB012610C4E100250DC5 /* Debug */,
+				816FDB022610C4E100250DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		816FDB032610C4E100250DC5 /* Build configuration list for PBXNativeTarget "PlashSpeed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				816FDB042610C4E100250DC5 /* Debug */,
+				816FDB052610C4E100250DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		816FDB062610C4E100250DC5 /* Build configuration list for PBXNativeTarget "PlashSpeedTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				816FDB072610C4E100250DC5 /* Debug */,
+				816FDB082610C4E100250DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		816FDB092610C4E100250DC5 /* Build configuration list for PBXNativeTarget "PlashSpeedUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				816FDB0A2610C4E100250DC5 /* Debug */,
+				816FDB0B2610C4E100250DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		816FDB1F2610CD2D00250DC5 /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				816FDB202610CD2D00250DC5 /* Debug */,
+				816FDB212610CD2D00250DC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 816FDAD12610C4DF00250DC5 /* Project object */;
+}
